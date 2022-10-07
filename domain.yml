@@ -1,0 +1,59 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - corona_intro
+  - corona_spread
+  - warm_weather
+  - food_spread
+  - high_risk
+  
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_corona_intro:
+  - text: "Coronavirus disease (COVID-19) is an infectious disease caused by the SARS-CoV-2 virus.Most people infected with the virus will experience mild to moderate respiratory illness and recover without requiring special treatment. However, some will become seriously ill and require medical attention. Older people and those with underlying medical conditions like cardiovascular disease, diabetes, chronic respiratory disease, or cancer are more likely to develop serious illness. Anyone can get sick with COVID-19 and become seriously ill or die at any age. 
+  The best way to prevent and slow down transmission is to be well informed about the disease and how the virus spreads. Protect yourself and others from infection by staying at least 1 metre apart from others, wearing a properly fitted mask, and washing your hands or using an alcohol-based rub frequently. Get vaccinated when it’s your turn and follow local guidance."
+  
+  utter_corona_spread:
+  - text: "People can catch COVID-19 from others who have the virus. The disease can spread from person to person through small droplets from the nose or mouth which are spread when a person with COVID-19 coughs or exhales. These droplets land on objects and surfaces around the person."
+  
+  utter_warm_weather:
+  - text: "Many had hoped that the new coronavirus would go away as the summer weather warmed and got more humid. Despite the fact that the virus does not do well in heat, the hot summer temperatures had no real effect on it..
+
+ Some strains of the virus can change depending on the environment. They may survive and thrive in various geographic regions or climates. There is no way to accurately predict how the virus responds in heat and humidity, or for that matter, cool and dry temperatures, outside laboratory experiments..
+
+ Even when scientists study real-world examples, the evidence is unclear. Though some viral illnesses seem to slow in the summer months, this isn’t always the case. In countries such as Australia and Iran, COVID-19 spread very quickly at the beginning of the pandemic despite warm and humid weather. Remember that flu season is typically during the winter." 
+  
+  utter_food_spread:
+  - text: "It was reported as saying that there's no truth in it. It spreads mainly from person to person and eating non-vegetarian food and eggs does not cause coronavirus infections. Limited access to fresh foods may lead to increased consumption of highly processed foods, which tend to be high in fats, sugars, and salt."  
+
+  utter_high_risk:
+  - text: "COVID-19 can affect anyone, and the disease can cause symptoms ranging from mild to very severe. We know that certain things can make people more likely to get very sick with COVID-19. We also know that certain settings and activities can make you more likely to get infected with the virus that causes COVID-19."  
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
